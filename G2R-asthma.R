@@ -61,6 +61,20 @@ tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","F","Gene.symbol","Gene.tit
 write.table(tT, file=stdout(), row.names=F, sep="\t") # Aqui es donde esta la tabla
 
 
+p_v <- subset(tT, P.Value < 0.05)
+p_v_LogF <- subset(p_v, F > 2)
+
+
+p_v_LogF
+
+#Esto es algo curioso...
+# Esto es post examen
+# Y no hice esto
+# Hice algo de arriba creyendo que ya era innecesario hacer el subset y etc...
+
+write.csv(p_v_LogF, file = "Ejercicio_5.csv")
+
+
 # =========================
 # Visualizar los resultados
 # =========================
