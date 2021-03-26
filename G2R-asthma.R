@@ -71,6 +71,7 @@ p_v_LogF
 # Esto es post examen
 # Y no hice esto
 # Hice algo de arriba creyendo que ya era innecesario hacer el subset y etc...
+# Y tuve suerte en el examen con lo de hacer el contraste y todo eso, porque justamente ayer que contaba ese script me di cuenta de que hacia eso
 
 write.csv(p_v_LogF, file = "Ejercicio_5.csv")
 
